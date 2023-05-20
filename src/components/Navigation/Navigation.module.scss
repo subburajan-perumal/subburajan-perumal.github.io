@@ -1,0 +1,22 @@
+// NAVIGATION
+@import '@styles/abstracts/variables';
+
+.header {
+}
+
+.navbar {
+  width: 100%;
+  background: $color3;
+  padding: 1rem 2rem;
+
+  &__nav {
+  }
+
+  &__item {
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .navbar {
+  }
+}

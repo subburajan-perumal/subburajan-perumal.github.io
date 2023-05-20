@@ -6,17 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.13.0",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.3",
+    "bootstrap": "^5.2.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.0",
-    "next": "13.4.0",
+    "next": "^13.4.1",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
+    "sass": "^1.62.1",
+    "three": "^0.152.2",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.10",
+    "@storybook/addon-interactions": "^7.0.10",
+    "@storybook/addon-links": "^7.0.10",
+    "@storybook/blocks": "^7.0.10",
+    "@storybook/nextjs": "^7.0.10",
+    "@storybook/react": "^7.0.10",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-plugin-storybook": "^0.6.12",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "storybook": "^7.0.10"
   }
 }

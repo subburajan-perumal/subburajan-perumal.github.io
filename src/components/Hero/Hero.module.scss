@@ -1,0 +1,77 @@
+@import '@styles/abstracts/variables';
+
+.hero {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: $color2;
+  padding: 2rem 2rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+
+  &__button {
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: green;
+    border-radius: 8px;
+  }
+}
+
+.profile {
+  max-width: 100%;
+  padding: 4rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  &__name {
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+    color: $color5;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+  }
+
+  &__profession {
+  }
+
+  &__socialbox {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__social {
+    width: 2rem;
+    // padding: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: contain;
+    border: 10px solid $color3;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: $small-screen) {
+}
+
+@media screen and (min-width: $medium-screen) {
+}
+@media screen and (min-width: $large-screen) {
+  // .profile {
+  //   flex-flow: row wrap;
+  //   max-width: 50%;
+  // }
+}
