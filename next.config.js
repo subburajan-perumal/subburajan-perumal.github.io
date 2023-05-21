@@ -3,7 +3,7 @@ const path = require('path');
 
 const nextConfig = {
   output: 'export',
-  distDir: 'dist',
+  // distDir: 'dist',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
