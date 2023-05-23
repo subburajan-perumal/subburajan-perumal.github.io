@@ -1,0 +1,46 @@
+@import '@styles/abstracts/variables';
+
+.timeline{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        display: flex;
+        width: 3px;
+
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &__item{
+        padding: 2rem;
+    }
+    &__content{
+
+    }
+
+
+}
+
+
+@media screen and (min-width : $medium-screen) {
+  .timeline{  
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        display: flex;
+        width: 3px;
+        left: 50%;
+        // transform: translateX(50%);
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &:nth-child(1){
+        right: 50%;
+    }
+
+}
+}

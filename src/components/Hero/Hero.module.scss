@@ -28,7 +28,7 @@
   flex-flow: column wrap;
   &__name {
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     color: $color5;
   }
@@ -46,7 +46,25 @@
   &__socialbox {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
     gap: 2rem;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    width: 50%;
+    color: $color2;
+    align-self: center;
+    justify-content: center;
+    margin: 4px;
+    padding: 0.8rem 0.4rem;
+    border-radius: 12px;
+    background-color: $color5;
+    &:hover {
+      background-color: $color4;
+    }
   }
   &__social {
     width: 2rem;
