@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { profileInfo } from '../../data/profileInfo.data';
 import styles from './Hero.module.scss';
 import profile_pic from '@assets/profile-pic_square.png';
-import resume from '@assets/20230521-Resume.pdf'
+// import resume from '@assets/20230521-Resume.pdf'
 import Link from 'next/link';
 
 const Hero = () => {
@@ -49,8 +49,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <Link href={resume} className={styles.profile__link} download>Download CV</Link>
-
+        <Link href="20230521-Resume.pdf" className={styles.profile__link} download>Download CV</Link>
       </div>
 
 
