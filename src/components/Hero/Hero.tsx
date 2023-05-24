@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <Link href="20230521-Resume.pdf" className={styles.profile__link} download>Download CV</Link>
+        <a href="20230521-Resume.pdf" className={styles.profile__link} download>Download CV</a>
       </div>
 
 
