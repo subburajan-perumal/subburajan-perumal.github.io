@@ -3,27 +3,23 @@ import Link from 'next/link';
 import styles from './Navigation.module.scss';
 // import resume from '@assets/resume.pdf';
 
-const Navbar = () => {
+const Navigation = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link href="/">
-          My Portfolio
-        </Link>
-      </div>
-      {/* <div className={styles.navLinks}>
-        <Link href="#about">
+      <div className={styles.navItem}>
+        <Link href="#about" className={styles.navLink}>
           About
         </Link>
-        <Link href="#projects">
+        {/* <Link href="#projects" className={styles.navLink}>
           Projects
-        </Link>
-        <Link href="#contact">
+        </Link> */}
+        <Link href="#contact" className={styles.navLink}>
           Contact
         </Link>
-      </div> */}
+
+      </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navigation;

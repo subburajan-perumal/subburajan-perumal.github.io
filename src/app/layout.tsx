@@ -1,6 +1,7 @@
 import '@styles/main.scss';
 import { Inter } from 'next/font/google';
 import FullscreenButton from '@components/FullScreenButton/FullScreenButton';
+import MoveToTop from '@components/MoveToTop/MovetoTop';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -35,7 +36,11 @@ export default function RootLayout({
         {/* <Navigation /> */}
         {children}
         <FullscreenButton />
-        {/* <MoveToTop /> */}
+        {/* <div style={{ height: "100vh" }}></div> */}
+        <MoveToTop />
+        <div style={{ marginBottom: "100px" }}>
+
+        </div>
       </body>
     </html>
   );

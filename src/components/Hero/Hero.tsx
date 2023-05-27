@@ -1,28 +1,29 @@
 import Image from 'next/image';
 import { profileInfo } from '../../data/profileInfo.data';
 import styles from './Hero.module.scss';
-import profile_pic from '@assets/profile-pic_square.png';
+// import profile_pic from '@assets/profile-pic_square.png';
+
 // import resume from '@assets/20230521-Resume.pdf'
 import Link from 'next/link';
 
 const Hero = () => {
   return (
     <section id="hero" className={styles.hero}>
-      <div className={styles.hero__container}>
+      <div className={styles.heroContainer}>
         <div className={styles.profile}>
           <div>
-            <Image src={profile_pic} alt="profile_pic" className={styles.profile__image} loading="lazy" />
+            <Image src={"./profile-pic_square.png"} width={250} height={250} alt="profile_pic" className={styles.profileImage} loading="lazy" />
           </div>
-          <h3 className={styles.profile__name}>
+          <h3 className={styles.profileName}>
             {profileInfo.fullName}
           </h3>
 
-          <h6 className={styles.profile__title}>Full Stack Developer</h6>
+          <h6 className={styles.profileTitle}>Full Stack Developer</h6>
 
 
-          <div className={styles.profile__socialbox}>
+          <div className={styles.profileSocialbox}>
 
-            <div className={styles.profile__social}>
+            <div className={styles.profileSocial}>
               <Link href="https://github.com/subburajan-perumal">
                 <i title="github">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 1024 1024"><path d="M512 0C229.1 0 0 229.1 0 512c0 226.6 146.6 417.9 350.1 485.8 25.6 4.5 35.2-10.9 35.2-24.4 0-12.2-0.6-52.5-0.7-95.3-128.6 23.7-161.9-31.4-172.1-60.2-5.8-14.7-30.7-60.2-52.5-72.3-17.9-9.6-43.5-33.3-0.6-33.9 40.3-0.6 69.1 37.1 78.7 52.5 46.1 77.4 119.7 55.7 149.1 42.2 4.5-33.3 17.9-55.7 32.6-68.5-113.9-12.8-233-57-232.9-252.8 0-55.7 19.8-101.8 52.5-137.6-5.1-12.8-23-65.3 5.1-135.7 0 0 42.9-13.4 140.8 52.5 41-11.5 84.5-17.3 128-17.3 43.5 0 87 5.8 128 17.3 97.9-66.6 140.8-52.5 140.8-52.5 28.2 70.4 10.2 122.9 5.1 135.7 32.6 35.8 52.5 81.3 52.5 137.6 0 196.5-119.7 240-233.6 252.8 18.6 16 34.6 46.7 34.5 94.7 0 68.5-0.6 123.5-0.6 140.8 0 13.4 9.6 29.4 35.2 24.4A512.8 512.8 0 0 0 1024 512c0-282.9-229.1-512-512-512z"></path></svg>
@@ -31,7 +32,7 @@ const Hero = () => {
             </div>
 
 
-            <div className={styles.profile__social}>
+            <div className={styles.profileSocial}>
               <Link href={'https://www.linkedin.com/in/subburajan-perumal/'}>
 
                 <i title="linkedin">
@@ -39,7 +40,7 @@ const Hero = () => {
                 </i>
               </Link>
             </div>
-            <div className={styles.profile__social}>
+            <div className={styles.profileSocial}>
 
               <Link href={'https://wa.me/+918608000190'}>
                 <i title="whatsapp">
@@ -48,8 +49,25 @@ const Hero = () => {
               </Link>
             </div>
           </div>
+          <a href="20230521-Resume.pdf" className={styles.profileLink} download>
+            Resume
+            <i title="Resume">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentcolor" viewBox="0 0 1024 1024"><path d="M960 800l-45.2-45.2L832 837.5V576h-64v261.5l-82.8-82.7L640 800l160 160 160-160z"></path><path d="M576 896H256V128h256v192a64.2 64.2 0 0 0 64 64h192v96h64v-160a29.1 29.1 0 0 0-9.6-22.4l-224-224A29.1 29.1 0 0 0 576 64H256a64.2 64.2 0 0 0-64 64v768a64.2 64.2 0 0 0 64 64h320Zm0-755.2l179.2 179.2H576Z"></path></svg>
+            </i>
+
+
+          </a>
+          <div className={styles.profileCertification}>
+            <a href="https://www.credly.com/badges/082d095c-98ac-4fbc-ae37-1ea2f11d27c6/public_url" target="_blank">
+              <Image src={"./AWS_CP.png"} alt="cloud practitioner logo" width={200} height={200} />
+            </a>
+            {/* <a href="https://www.credly.com/badges/874a1640-a1fd-4790-b262-0dfd14ddcf0c/public_url" target="_blank">
+              <Image src={"./aws_restart_graduate.png"} alt="aws restart graduate logo" width={100} height={100} />
+            </a> */}
+          </div>
         </div>
-        <a href="20230521-Resume.pdf" className={styles.profile__link} download>Download CV</a>
+
+
       </div>
 
 

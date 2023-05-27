@@ -1,0 +1,28 @@
+@import '@styles/abstracts/variables';
+
+.movetotopButton {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 9999;
+  background-color: rgba($color3, 0.5);
+  color: $color2;
+  padding: 10px 10px;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.movetotopButton:hover {
+  background-color: $color4;
+  // bottom: 50px;
+}
+
+@media screen and (min-width: $medium-screen) {
+  .movetotopButton {
+    bottom: 50px;
+    padding: 1.3rem;
+    font-size: 1.6rem;
+  }
+}

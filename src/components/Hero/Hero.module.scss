@@ -1,22 +1,15 @@
 @import '@styles/abstracts/variables';
 
 .hero {
-  min-height: 100vh;
+  // min-height: 100vh;
   max-width: 100%;
   background-color: $color2;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 
-  &__container {
+  &Container {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-  }
-
-  &__button {
-    padding: 1rem 1.5rem;
-    background-color: white;
-    color: green;
-    border-radius: 8px;
   }
 }
 
@@ -26,24 +19,18 @@
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  &__name {
+  &Name {
     font-size: 1.6rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     color: $color5;
   }
 
-  &__title {
+  &Title {
     text-align: center;
   }
 
-  &__description {
-  }
-
-  &__profession {
-  }
-
-  &__socialbox {
+  &Socialbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,34 +38,43 @@
     gap: 2rem;
   }
 
-  &__link {
+  &Link {
     position: relative;
     display: flex;
     width: 50%;
     color: $color2;
     align-self: center;
     justify-content: center;
-    margin: 4px;
-    padding: 0.8rem 0.4rem;
+    margin: 1rem;
+    font-weight: 500;
+    padding: 0.7rem 0.6rem;
     border-radius: 12px;
     background-color: $color5;
+    & > i {
+      margin: 3px;
+      // line-height: 3rem;
+    }
     &:hover {
       background-color: $color4;
     }
   }
-  &__social {
+  &Social {
     width: 2rem;
     // padding: 1rem;
   }
 
-  &__image {
+  &Image {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 350px;
     object-fit: contain;
     border: 10px solid $color3;
     background-color: white;
     border-radius: 50%;
+  }
+  &Certification {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 

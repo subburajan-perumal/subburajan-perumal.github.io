@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Project = () => {
   return (
     <section id="project">
-      <h1>Project</h1>
+      <h1>Projects</h1>
       <div className="gallery"></div>
     </section>
   );

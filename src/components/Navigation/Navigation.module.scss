@@ -1,22 +1,48 @@
 // NAVIGATION
 @import '@styles/abstracts/variables';
 
-.header {
-}
-
 .navbar {
-  width: 100%;
-  background: $color3;
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 28px;
+  // font-size: 0rem;
+  background: $color5;
+  color: $color2;
+  border-radius: 50px;
 
-  &__nav {
+  .navItem {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.1rem 4rem;
+    gap: 2rem;
+    // flex-wrap: nowrap;
   }
+  .navButton {
+    padding: 7px;
+    // display: inline-block;
+    // position: absolute;
+    display: inline-flex;
 
-  &__item {
+    right: 40px;
+    // font-size: 1.5rem;
+    color: $color5;
+    background: $color2;
+    border-radius: 8px;
+    cursor: pointer;
+    // width: 1rem;
+
+    & > i {
+      // margin-top: 39px;
+      line-height: 1rem;
+    }
   }
 }
 
 @media screen and (min-width: $medium-screen) {
   .navbar {
+    // position: sticky;
+    // top: 50px;
+    // bottom: auto;
   }
 }

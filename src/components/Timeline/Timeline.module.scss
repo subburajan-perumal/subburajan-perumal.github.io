@@ -1,46 +1,64 @@
 @import '@styles/abstracts/variables';
-
-.timeline{
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        background-color: #fff;
-        display: flex;
-        width: 3px;
-
-        align-content: center;
-        justify-content: center;
-        height: 100%;
-    }
-    &__item{
-        padding: 2rem;
-    }
-    &__content{
-
-    }
-
-
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-
-@media screen and (min-width : $medium-screen) {
-  .timeline{  
-    &::before{
-        content: '';
-        position: absolute;
-        background-color: #fff;
-        display: flex;
-        width: 3px;
-        left: 50%;
-        // transform: translateX(50%);
-        align-content: center;
-        justify-content: center;
-        height: 100%;
-    }
-    &:nth-child(1){
-        right: 50%;
-    }
-
+.timelineItem {
+  position: relative;
 }
+
+.timelineItemContent {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.timelineItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.timelineItemTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.timelineItemDate {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.timelineItemDescription {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.timelineItemProjectsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timelineItemProject {
+  margin-bottom: 0.5rem;
+}
+
+.timelineItemProject a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .timelineContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .timelineItem {
+    flex-basis: calc(50% - 1rem);
+  }
 }
